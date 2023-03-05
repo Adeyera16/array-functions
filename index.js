@@ -26,7 +26,23 @@ console.log(names);
 
 
 //Examples of non-mutating array
+// 1
+const nonMutating = [1,2,3,4,5,6];
+const nonMutating1 = [2,4,6,8,10];
+const newArr = nonMutating.concat(nonMutating1);
+console.log(newArr);
 
+// 2
+const newArr1 = nonMutating.slice(1, 4);
+console.log(newArr1);
+
+// 3
+const newArr2 = nonMutating.filter(item => item > 2);
+console.log(newArr2);
+
+// 4
+const newArr3 = nonMutating.map(item => item * 2);
+console.log(newArr3); 
 
 // Question 2
 languages = ["C#", "JavaScript", "Ruby", "PHP", "Python"];
